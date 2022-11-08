@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Lesson16</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+
+        <div class="header__logo">
+          <img src="img/logo.png" alt="">
+        </div>
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="" class="menu__link">About Us</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Courses</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Events</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Blog</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__actions actions-header">
+          <a href="" class="actions-header__button button">Get consultation</a>
+          <a href="" class="actions-header__auth"><span>Log in / Register</span></a>
+        </div>
+
+
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="page__feedback feedback">
+        <div class="feedback__container">
+          <div class="feedback__media">
+            <img class="feedback__image" src="img/illustration.png" alt="Image">
+          </div>
+          <div class="feedback__block">
+            <div class="feedback__subtitle subtitle">Any questions?</div>
+            <div class="feedback__title title">Drop us a line</div>
+            <form class="feedback__form form-feedback" action="https://jsonplaceholder.typicode.com/posts"
+              method="post">
+              <div class="form-feedback__text-box">
+                <div class="form-feedback__line">
+                  <label for="f-name" class="form-feedback__label">First Name*</label>
+                  <input id="f-name" type="text" class="form-feedback__input" autocomplete="off"
+                    placeholder="Your first name" name="first-name" required="">
+                </div>
+                <div class="form-feedback__line">
+                  <label for="l-name" class="form-feedback__label">Last Name*</label>
+                  <input id="l-name" type="text" class="form-feedback__input" autocomplete="off"
+                    placeholder="Your last name" name="last-name" required="">
+                </div>
+                <div class="form-feedback__line">
+                  <label for="e-mail" class="form-feedback__label">Email*</label>
+                  <input id="e-mail" type="email" class="form-feedback__input" autocomplete="off"
+                    placeholder="Your working email" name="mail" required="">
+                </div>
+                <div class="form-feedback__line">
+                  <label for="ph-tel" class="form-feedback__label">Your phone number</label>
+                  <input id="ph-tel" type="tel" class="form-feedback__input" autocomplete="off"
+                    placeholder="Your phone number" name="phone" required="">
+                </div>
+                <div class="form-feedback__line form-feedback__line--textarea">
+                  <label for="sms" class="form-feedback__label">Message*</label>
+                  <textarea id="sms" class="form-feedback__textarea" name="message"
+                    placeholder="Your message"></textarea>
+                </div>
+                <div class="form-feedback__line form-feedback__line--radio">
+                  <h4 class="radio__title">Your gender</h4>
+
+                  <div class="form-feedback__radio radio">
+                    <input  id="gender-1" type="radio" class="radio__input" value="man" name="gender"
+                      autocomplete="off" required="">
+                    <label for="gender-1" class="radio__label">Man</label>
+                  </div>
+
+                  <div class="form-feedback__radio radio">
+                    <input checked id="gender-2" type="radio" class="radio__input" value="woman" name="gender"
+                      autocomplete="off" required="">
+                    <label for="gender-2" class="radio__label">Woman</label>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="form-feedback__send-box">
+                <div class="form-feedback__line checkbox-feedback">
+                  <input class="checkbox-feedback__input" id="chek" type="checkbox" name="commun" required=""
+                    autocomplete="off">
+                  <label class="checkbox-feedback__label" for="chek"><span class="checkbox-feedback__span">I agree to
+                      receive communications from Createx Online School</span></label>
+                </div>
+                <div class="form-feedback__line">
+                  <button class="form-feedback__button button" type="submit">Send message</button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        It's footer
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>
